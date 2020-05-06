@@ -1,0 +1,8 @@
+<div class="col-md-6">
+  <p><%= simple_form_for @customer do |f|  %></p>
+  <p><%= f.input :name %></p>
+  <p><%= f.select :blacklist, Customer::BLACKLIST %></p>
+  <p><%= f.input :add_to_black_list %></p>
+  <p><%= f.button :submit%></p>
+  <% end %>
+</div>
